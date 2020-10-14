@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+
+    <!-- Owl Carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome 5 CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="row">
+                <div class="col liquid">
+                    <h4>Skyrocketed C0.</h4>
+
+                    <!-- Start Owl Carousel -->
+
+                    <div class="owl-carousel owl-theme">
+                        <img src="./assets/marketing.svg" alt="Ada ilustrasinya" class="login_img">
+                        <img src="./assets/shopping.svg" alt="Ada ilustrasinya" class="login_img">
+                        <img src="./assets/otw.svg" alt="Ada ilustrasinya" class="login_img">
+                        <img src="./assets/selesai.svg" alt="Ada ilustrasinya" class="login_img">
+                    </div>
+
+                    <!-- END Owl Carousel -->
+
+                    <!-- Follow -->
+
+                    <div class="follow">
+                        Ikuti Saya <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <!-- End Follow -->
+                </div>
+                <div class="col login">
+                    <button type="button" class="btn btn-signup">Daftar</button>
+                    <form>
+                        <div class="titles">
+                            <h6>Selamat Datang di Skyrocketed Co.</h6>
+                            <h3>Masuk Sekarang</h3>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="masukkan email" class="form-input">
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="masukkan password" class="form-input">
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-login">Masuk</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                items: 1
+            });
+        });
+    </script>
+</body>
+
+</html>
